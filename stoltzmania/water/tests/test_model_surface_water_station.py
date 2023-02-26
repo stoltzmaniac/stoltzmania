@@ -17,7 +17,9 @@ SURFACE_WATER_STATION = {
     'por_end': 2023,
     'utm_x': 44444,
     'utm_y': 55555,
-    'location': 'User Supplied',
+    'location': '(-105.0844 40.5853)',
+    'location_accuracy': 'User Supplied',
+    'more_information': 'Not Available',
     'geometry': 'POINT(-105.0844 40.5853)'
 }
 
