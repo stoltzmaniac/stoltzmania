@@ -1,3 +1,4 @@
-from django.contrib import admin
+from django.contrib.gis import admin
+from .models import SurfaceWaterStation
 
-# Register your models here.
+admin.site.register(SurfaceWaterStation, admin.ModelAdmin)
