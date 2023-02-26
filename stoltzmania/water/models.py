@@ -25,3 +25,6 @@ class SurfaceWaterStation(models.Model):
     more_information = models.CharField(max_length=500, null=True)
     location = models.CharField(max_length=500, null=True)
     geometry = models.PointField(srid=4326, null=True, spatial_index=True)
+
+    def __str__(self):
+        return f"Station: {self.station_name} -- {self.county}, {self.state}"
