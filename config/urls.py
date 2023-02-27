@@ -17,6 +17,7 @@ urlpatterns = [
     path(settings.ADMIN_URL, admin.site.urls),
     # User management
     path("users/", include("stoltzmania.users.urls", namespace="users")),
+    path("water/", include("stoltzmania.water.urls", namespace="water")),
     path("accounts/", include("allauth.urls")),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
